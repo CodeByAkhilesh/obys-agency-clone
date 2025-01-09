@@ -50,7 +50,7 @@ cursorAnimation();
 let  tl2 = gsap.timeline();
 tl2.from(".nav",{
   opacity: 0,
-  // delay: 4.8,
+  delay: 4.8,
 });
 tl2.from(".headding h1, .headding .text",{
   y: '100%',
