@@ -699,3 +699,291 @@ main {
   z-index: 9999999 !important;
   pointer-events: none;
 } */
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 0;
+  }
+  .logo {
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 5vw;
+  }
+  .menu {
+    display: none;
+  }
+  .shoutout {
+    display: none;
+  }
+  .page1 {
+    height: fit-content;
+    width: 100%;
+    position: relative;
+  }
+  .hero-div {
+    margin-top: 20vw;
+    padding: 0vw 5vw;
+    flex-direction: column;
+
+  }
+  .main-heading h1 {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+  .headding:nth-child(3) {
+    font-size: 6vw;
+  }
+  .text {
+    border-bottom: 1vw solid white;
+    line-height: 10vw;
+  }
+  .number h1 {
+    font-size: 5vw;
+  }
+  .scroll-info {
+    display: none;
+  }
+  .page1-part2 {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  .video-container {
+    height: 50vh;
+    width: 100%;
+  }
+  .costum-video-play-btn {
+    height: 25vw;
+    width: 25vw;
+  }
+  .costum-video-play-btn i {
+    font-size: 5.5vw;
+  }
+
+
+  .page2 {
+    height: fit-content;
+    padding: 0vw 5vw;
+    position: relative;
+  }
+  .projects-section h1 {
+    font-size: 11vw;
+    height: fit-content;
+    margin: 20vw 0% 7vw 0%;
+  }
+  .projects-section::before {
+    left: 5vw;
+    top: -8vw;
+    font-size: 5vw;
+  }
+  .underline {
+    margin-left: 0%;
+    margin-right: 0vw;
+  }
+  .all-project-container {
+    /* gap: 6vw; */
+    height: fit-content;
+    flex-direction: column;
+  }
+  .project {
+    height: 145vw;
+    width: 100%;
+    margin-top: 6vw;
+  }
+  .project-name {
+    font-size: 6vw;
+    font-weight: 800;
+    margin-bottom: 8vw  ;
+  }
+  .project-img {
+    height: 75%;
+    width: 100%;
+    position: relative;
+  }
+  .project-img2 {
+    height: 75%;
+    width: 100%;
+  }
+  .project-discription {
+    height: 10%;
+    padding-top: 5.5vw;
+  }
+  .discription {
+    width: 70%;
+  }
+  .discription h4 {
+    line-height: 5vw;
+  }
+  .project-underline {
+    padding-top: 5.5vw;
+  }
+  .gola-container {
+    display: none;
+  }
+  .gola {
+    display: none;
+  }
+  .center-gola {
+    padding: 18vw 0vw;
+  }
+  .center-gola .gola {
+    display: block;
+    position: relative;
+    height: 40vw;
+    width: 40vw;
+
+  }
+  .center-gola .gola h4 {
+    font-size: 2.5vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .about {
+    padding: 0vw 5vw;
+  }
+  .page3-main-text {
+    height: 65vw;
+    margin-top: 2vw;
+    position: relative;
+  }
+  .page3-main-text h1 {
+    font-size: 11vw;
+    height: 13vw;
+    margin: 0vw;
+  }
+  .page3-main-text h1::before {
+    left: 0vw;
+    top: -8vw;
+    font-size: 5vw;
+  }
+  .about-pera {
+    margin-left: 0vw;
+    width: 100%;
+    height: fit-content;
+    margin-top: 14vw;
+  }
+  .about-pera p {
+    font-size: 5vw;
+  }
+  .about-img-text {
+    margin-left: 0%;
+    width: 100%;
+    flex-direction:column-reverse;
+  }
+  .about-img-text .img {
+    height: 105vw;
+    width: 100%;
+    margin-top: 12vw;
+  }
+  .about-img-left-pera {
+    width: 100%;
+    margin-left: 0vw;
+  }
+  .about-img-left-pera p {
+    font-size: 4vw;
+    line-height: 5vw;
+    margin-top: 10vw;
+  }
+  .about-img-left-pera p:nth-child(2) {
+    margin-top: 10vw;
+  }
+  .reward-section {
+    height: 105vw;
+    width: 100%;
+    top: 0vw;
+    left: 0vw;
+    margin-bottom: 0vw;
+    padding: 5vw;
+    margin-top: 4vw;
+  }
+  .reward-block-row {
+    height: 15.5vw;
+    padding: 0vw;
+    margin-top: 2.5vw;
+  }
+  .reward-block-title h3 {
+    font-size: 4vw;
+  }
+  .reward-block-discription {
+    width: 50%;
+  }
+  .reward-block-discription h4 {
+    font-size: 4vw;
+  }
+  .underline {
+    margin-left: 0vw;
+    margin-top: 12vw;
+  }
+  .work {
+    margin-left: 0%;
+    margin-top: 5vw;
+  }
+  .work h4 {
+    font-size: 4vw;
+  }
+  .scroll-word-container {
+    padding: 14vw 0vw;
+  }
+  .scroll-word {
+    line-height: 9vw;
+  }
+  .word h1 {
+    font-size: 12vw;
+  }
+  .footer-page {
+    padding: 8vw 5vw 0vw 5vw ;
+    margin-left: 0%;
+    position: relative;
+  }
+  .text-icon-container {
+    width: 100%;
+    margin-bottom: 0vw;
+    height: fit-content;
+  }
+  .text-icon-container h1 {
+    font-size: 9.5vw;
+    margin: 0% 0% 0vw 0%;
+  }
+  .footer-page .underline{
+    margin-top: 8vw;
+  }
+  
+  .footer-page::before {
+    left: 5vw;
+    top: -2vw;
+    font-size: 5vw;
+  }
+  
+  .footer-info {
+    height: fit-content;
+    padding: 10vw 0vw;
+    margin-left: 0%;
+    margin-right: 0vw;
+    flex-direction: column;
+  }
+  .footer-info h4 {
+    margin-bottom: 5vw;
+    font-size: 4vw;
+  }
+  .footer-info h3 {
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 5.5vw;
+  }
+  .footer h3 {
+    margin-left: 0%;
+    padding: 9vw 0vw;
+    font-weight: 500;
+    font-size: 5vw;
+  }
+  .footer-text svg {
+    height: 8vw;
+    width: 8vw;
+    margin-left: 4vw;
+  }
+}
