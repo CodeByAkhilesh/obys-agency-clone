@@ -257,9 +257,271 @@ function footerTextAnime() {
   });
 }
 
+function microInteraction(){
+
+  function trackingScroll(){
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector("main"), // Locomotive's container
+      smooth: true
+    });
+    
+    // tracking locomotive scroll
+    scroll.on("scroll", (position) => {
+      let scrollInfo = document.querySelector(".scroll-info");
+      let scrollPosition = position.scroll.y;
+      if(scrollPosition > 0){
+        gsap.to(".scroll-info",{
+          opacity: 0,
+        })
+      }
+      else{
+        gsap.to(".scroll-info",{
+          opacity: 1,
+        })
+      }
+    });
+  }
+  trackingScroll();
+  
+gsap.from(".projects-section h1",{
+  opacity: 0,                    
+  y: 100,                        
+  duration: 0.8,
+  scrollTrigger: {
+    trigger: ".projects-section h1",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",           
+  },
+})
+
+gsap.from(".projects-section .underline",{
+  opacity: 0,                    
+  width: "0%",                       
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".projects-section .underline ",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",         
+  },
+})
+
+gsap.from("#project-name-1",{
+  opacity: 0,                    
+  y: 100,                        
+  duration: 0.8,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: "#project-name-1",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",           
+  },
+})
+gsap.from("#project-name-2",{
+  opacity: 0,                    
+  y: 100,                        
+  duration: 0.8,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: "#project-name-2",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",           
+  },
+})
+gsap.from("#project-name-3",{
+  opacity: 0,                    
+  y: 100,                        
+  duration: 0.8,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: "#project-name-3",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",           
+  },
+})
+gsap.from("#project-name-4",{
+  opacity: 0,                    
+  y: 100,                        
+  duration: 0.8,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: "#project-name-4",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",           
+  },
+})
+gsap.from("#project-name-5",{
+  opacity: 0,                    
+  y: 100,                        
+  duration: 0.8,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: "#project-name-5",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",           
+  },
+})
+gsap.from("#project-name-6",{
+  opacity: 0,                    
+  y: 100,                        
+  duration: 0.8,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: "#project-name-6",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",           
+  },
+})
+gsap.from("#project-1 .project-underline",{
+  opacity: 0,                    
+  width: "0%",                       
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#project-1 .project-underline",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",         
+  },
+})
+gsap.from("#project-2 .project-underline",{
+  opacity: 0,                    
+  width: "0%",                       
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#project-2 .project-underline",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",         
+  },
+})
+gsap.from("#project-3 .project-underline",{
+  opacity: 0,                    
+  width: "0%",                       
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#project-3 .project-underline",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",         
+  },
+})
+gsap.from("#project-4 .project-underline",{
+  opacity: 0,                    
+  width: "0%",                       
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#project-4 .project-underline",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",         
+  },
+})
+gsap.from("#project-5 .project-underline",{
+  opacity: 0,                    
+  width: "0%",                       
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#project-5 .project-underline",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",         
+  },
+})
+gsap.from("#project-6 .project-underline",{
+  opacity: 0,                    
+  width: "0%",                       
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#project-6 .project-underline",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",         
+  },
+})
+
+gsap.from(".page3-main-text h1",{
+  opacity: 0,                    
+  y: 100,                        
+  duration: 0.8,
+  scrollTrigger: {
+    trigger: ".page3-main-text h1",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",           
+  },
+})
+
+gsap.from(".page3-main-text .underline",{
+  opacity: 0,                    
+  width: "0%",                       
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".page3-main-text .underline ",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",         
+  },
+})
+gsap.from(".about #underline-2",{
+  opacity: 0,                    
+  width: "0%",                       
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".about #underline-2",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",         
+  },
+})
+gsap.from(".footer-page .underline",{
+  opacity: 0,                    
+  width: "0%",                       
+  duration: 1,
+  stagger: 0.8,
+  scrollTrigger: {
+    trigger: ".footer-page .underline ",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",         
+  },
+})
+gsap.from(".about-pera p",{
+  opacity: 0,                    
+  y: 100,                        
+  duration: 0.8,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: ".about-pera p",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",           
+  },
+})
+gsap.from(".footer-info",{
+  opacity: 0,                    
+  y: 100,                        
+  duration: 0.8,
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: ".footer-info",  
+    scroller: "main",
+    start: "top 80%",         
+    end: "bottom top",           
+  },
+})
+}
+
 loddingAnimation();
 locomotivejs();
 cursorAnimation();
 mouseFollows();
 sheryAnimation();
 footerTextAnime();
+microInteraction();
