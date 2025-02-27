@@ -268,14 +268,16 @@ function microInteraction(){
     // tracking locomotive scroll
     scroll.on("scroll", (position) => {
       let scrollInfo = document.querySelector(".scroll-info");
+      let menu = document.querySelector(".menu");
+      let shoutout = document.querySelector(".shoutout");
       let scrollPosition = position.scroll.y;
       if(scrollPosition > 0){
-        gsap.to(".scroll-info",{
+        gsap.to(".scroll-info, .shoutout, .menu",{
           opacity: 0,
         })
       }
       else{
-        gsap.to(".scroll-info",{
+        gsap.to(".scroll-info, .shoutout, .menu",{
           opacity: 1,
         })
       }
